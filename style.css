@@ -1,0 +1,270 @@
+/* ===== BODY BACKGROUND ===== */
+
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+
+    background:
+    linear-gradient(rgba(255,140,90,0.75),
+    rgba(255,190,140,0.75)),
+    url("images/temple.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    color:rgb(175, 10, 10);
+}
+
+header h1{
+    font-size:50px;
+    text-shadow:0 0 20px gold;
+}
+
+header p{
+    font-size:20px;
+}
+
+/* ===== NAVBAR ===== */
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:15px;
+    background:rgba(177, 9, 9, 0.5);
+    backdrop-filter:blur(10px);
+}
+
+nav a{
+    text-decoration:none;
+    color:#7a0000;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:gold;
+    transform:scale(1.1);
+}
+
+/* ===== SECTION CARD ===== */
+
+section{
+    width:85%;
+    margin:60px auto;
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(12px);
+    color:white;
+    text-align:center;
+}
+
+/* ===== VIDEO ===== */
+
+.video-wrapper{
+    display:flex;
+    justify-content:center;
+}
+
+.satsang-video{
+    width:65%;
+    border-radius:20px;
+    box-shadow:
+        0 0 25px rgba(255,215,0,0.7),
+        0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ===== LIST ===== */
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    font-size:20px;
+    margin:10px 0;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.6);
+    color:white;
+}
+
+/* ===== DIYA EFFECT ===== */
+
+.diya-left,
+.diya-right{
+    position:fixed;
+    font-size:40px;
+}
+
+.diya-left{
+    left:20px;
+    bottom:20px;
+}
+
+.diya-right{
+    right:20px;
+    bottom:20px;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
+}
+/* ================= OM BACKGROUND ================= */
+
+.om-bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background-image:url("images/om.png.jpg");
+    background-repeat:repeat;
+    background-size:120px;
+
+    opacity:0.08;
+    z-index:-1;
+
+    animation:omMove 40s linear infinite;
+}
+
+/* Floating movement */
+@keyframes omMove{
+    from{
+        background-position:0 0;
+    }
+    to{
+        background-position:1000px 1000px;
+    }
+}
+#teachings{
+    text-align:center;
+}
+
+#teachings h2{
+    color:#7a0000;
+    font-size:36px;
+    text-shadow:0 0 10px rgba(255,215,0,0.5);
+}
+
+#teachings li{
+    color:#4a2c12;
+    font-size:20px;
+    line-height:2;
+    list-style:none;
+}
+/* ================= Social Media Sites ================= */
+
+#Social{
+    text-align:center;
+    padding:60px 20px;
+}
+
+/* Heading */
+#social h2{
+    color:#7a0000;   /* deep maroon */
+    font-size:36px;
+    text-shadow:0 0 10px rgba(255,215,0,0.6);
+}
+
+/* Text */
+#social p{
+    color:#4a2c12;   /* temple brown */
+    font-size:20px;
+    font-weight:600;
+    margin:10px 0;
+}
+
+/* Hover Divine Effect */
+#social p:hover{
+    color:#a52a2a;
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+    /* Golden divider */
+#social h2::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:3px;
+    background:gold;
+    margin:12px auto;
+    border-radius:5px;
+}
+/* ===== BOOKS SECTION ===== */
+
+.books-container{
+    text-align:center;
+    padding:60px 20px;
+}
+
+/* Books heading */
+.books-container h2{
+    font-size:38px;
+    color:#7a0000;
+    text-shadow:0 0 8px gold;
+}
+
+/* Books card */
+details{
+    background:linear-gradient(135deg,#fff5e6,#ffe0b3);
+    border-radius:15px;
+    width:380px;
+    margin:25px auto;
+    padding:20px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.25);
+    border:2px solid gold;
+}
+
+/* Summary (Hindi Books / Sindhi Books) */
+summary{
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    color:#7a0000;
+    margin-bottom:10px;
+}
+
+/* Book item */
+.book-item{
+    margin:10px 0;
+}
+
+/* Book link */
+.book-item a{
+    display:block;
+    text-decoration:none;
+    background:white;
+    padding:12px;
+    border-radius:8px;
+    font-size:18px;
+    color:#4a2c12;
+    font-weight:600;
+    transition:0.3s;
+}
+
+/* Hover effect */
+.book-item a:hover{
+    background:#fff0cc;
+    transform:scale(1.05);
+    box-shadow:0 0 10px gold;
+}

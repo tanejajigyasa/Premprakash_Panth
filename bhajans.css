@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffcc70, #ff8177);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.bhajan-box {
+    background: white;
+    width: 60%;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.bhajan-box:hover {
+    transform: scale(1.05);
+}
+
+.bhajan-box h2 {
+    color: #ff5e62;
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+a {
+    display: inline-block;
+    margin: 30px;
+    padding: 10px 20px;
+    background: white;
+    color: #ff5e62;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+a:hover {
+    background: #4c04e7bd;
+    color: white;
+}
